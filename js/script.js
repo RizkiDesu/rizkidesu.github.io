@@ -1,12 +1,7 @@
 //about tab
-
-
 const tabContainer = document.querySelector('.about-taps'),
 aboutSection = document.querySelector('.about-section');
-
 tabContainer.addEventListener('click', (e) => {
-
-    // console.log(e.target);
     if(e.target.classList.contains('tab-item') && !e.target.classList.contains('active')){
         tabContainer.querySelector('.active').classList.remove('active');
         e.target.classList.add('active');
@@ -15,3 +10,36 @@ tabContainer.addEventListener('click', (e) => {
         aboutSection.querySelector(target).classList.add('active');
     }
 });
+
+// detail  pop up
+document.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("view-project-btn")){
+        togglePortfolioPopup();
+        document.querySelector(".portfolio-popup").scrollTo(0,0);
+        portofolioDetails(e.target.parentElement);
+    }
+});
+function togglePortfolioPopup(){
+    document.querySelector(".portfolio-popup").classList.toggle("open");
+    document.body.classList.toggle("hide-scrolling");
+    document.querySelector(".main").classList.toggle("fade-out");
+}
+document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+
+document.addEventListener("click", (e)=>{
+    if(e.target.classList.contains("pp-inner")){
+        togglePortfolioPopup();
+    }
+})
+
+function portofolioDetails(portofolioItem){
+    // console.log(portofolioItem);
+    document.querySelector(".pp-thumbnail img").src = 
+    portofolioItem.querySelector(".portfolio-item-thumbnail img").src;
+
+    document.querySelector(".pp-header h3").innerHTML = 
+    portofolioItem.querySelector(".portfolio-item-title").innerHTML;
+
+    document.querySelector(".pp-body").innerHTML = 
+    portofolioItem.querySelector(".portfolio-item-detail").innerHTML;
+}

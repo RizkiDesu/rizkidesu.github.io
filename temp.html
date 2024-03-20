@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Penggunaan Fungsi JavaScript</title>
+    <style>
+        /* CSS hanya untuk keperluan contoh */
+        .contoh-elemen {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contoh-elemen">
+        <p>Elemen 1</p>
+    </div>
+    <div class="contoh-elemen">
+        <p>Elemen 2</p>
+    </div>
+    <div class="contoh-elemen">
+        <p>Elemen 3</p>
+    </div>
+
+    <script>
+        function tampilkanInfo(element) {
+            console.log("Informasi dari elemen: ", element.textContent);
+        }
+
+        document.querySelectorAll('.contoh-elemen').forEach(function(elemen) {
+            elemen.addEventListener('click', function(e) {
+                tampilkanInfo(e.target.parentElement);
+            });
+        });
+    </script>
+</body>
+</html>
