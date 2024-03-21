@@ -921,3 +921,9 @@ ul{
         font-size: 20px;
     }
 }
+
+.timeline-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+     
+  }
