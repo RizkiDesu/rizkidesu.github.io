@@ -264,8 +264,8 @@ button{
 .header.active .nav-toggler span::after{
     transform: rotate(-45deg);
 }
-.header.not(.active) .nav-toggler:hover span::before,
-.header.not(.active) .nav-toggler:hover span::after{
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after{
     width: 50%;
 }
 .header .nav{

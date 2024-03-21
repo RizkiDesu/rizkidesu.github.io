@@ -16,6 +16,7 @@ function toggleNavbar(){
 //active section
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("link-item") && e.target.hash!==""){
+        document.body.classList.add("hide");
         const hash = e.target.hash;
         // console.log(hash)
         if (e.target.classList.contains("nav-item")){
@@ -30,6 +31,7 @@ document.addEventListener("click", (e)=>{
             document.querySelector(e.target.hash).classList.add("active");
             window.scrollTo(0,0);
             document.body.classList.remove("hide-scrolling");
+            document.body.classList.remove("hide");
         }, 500);
     }
 });
