@@ -1,3 +1,14 @@
+window.addEventListener("load",()=>{
+    document.querySelector(".main").classList.remove("hidden");
+    document.querySelector(".home-section").classList.add("active");
+    // page loader
+    document.querySelector(".page-loader").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".page-loader").style.display="none";
+    }, 1000);
+})
+
+
 //togle navbar
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click", ()=>{
@@ -16,6 +27,8 @@ function toggleNavbar(){
 //active section
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("link-item") && e.target.hash!==""){
+        //active overlay
+        document.querySelector(".overlay").classList.add("active");
         document.body.classList.add("hide");
         const hash = e.target.hash;
         // console.log(hash)
@@ -32,6 +45,7 @@ document.addEventListener("click", (e)=>{
             window.scrollTo(0,0);
             document.body.classList.remove("hide-scrolling");
             document.body.classList.remove("hide");
+            document.querySelector(".overlay").classList.remove("active");
         }, 500);
     }
 });
