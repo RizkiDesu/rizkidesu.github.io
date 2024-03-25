@@ -21,6 +21,16 @@
         "social":
         [
             {
+                "platform" : "linkedin",
+                "link" : "https://www.linkedin.com/in/rizki-desu-018858196",
+                "icon" : "fab fa-linkedin"
+            },
+            {
+                "platform" : "Github",
+                "link" : "https://github.com/RizkiDesu",
+                "icon" : "fab fa-github"
+            },
+            {
                 "platform" : "Instagram",
                 "link" : "https://www.instagram.com/sayap.kegelapan/",
                 "icon" : "fab fa-instagram"
@@ -28,12 +38,7 @@
             {
                 "platform" : "Facebook",
                 "link" : "https://www.facebook.com/profile.php?id=100078904287291",
-                "icon" : "fab fa-linkedin"
-            },
-            {
-                "platform" : "Github",
-                "link" : "https://github.com/RizkiDesu",
-                "icon" : "fab fa-github"
+                "icon" : "fab fa-facebook"
             },
             {
                 "platform" : "Youtube",
