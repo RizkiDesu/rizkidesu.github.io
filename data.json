@@ -5,7 +5,7 @@
         [
             {
                 "nama": "Rizki Putra Utama Endriansyah",
-                "whatMe": "it developer",
+                "whatMe": "IT Developer",
                 "homeImg": "./img/profile-img.png",
                 "aboutImg": "./img/about-img.png",
                 "Aboutme" : "Perkenalkan, nama saya Rizki Putra Utama Endriansyah. S1 Teknik informatika dari Universitas Kajuruhan malang. Selama kuliah, saya berhasil dapat pendanaan di bidang kemahasiswaan dan aktif berorganisasi dalam kampus. Sebelumnya, saya pernah magang sebagai game desaider dan IoT Depeloper. Saya sangat menyukai pekerjaan yang berhubungan dengan Teknologi Informasi dan perangkat keras dan memiliki kemampuan untuk dengan cepat belajar.",
@@ -73,7 +73,25 @@
                 "teknologi": "Python, Flask, HTML, CSS, JS",
                 "role" : "Fullstack Developer",
                 "link": "https://github.com/RizkiDesu/deteksi_katarak"
+            },
+            {
+                "namaproject": "Alien Anu Tech-GGJ",
+                "imglokasi": "./img/portfolio/anutechteam.jpeg",
+                "deskripsi": "Dibuat dalam rangka global game jam 2020. Game ini bertema tentang alien yang mencoba untuk kembali ke planet asalnya. Game ini dibuat dengan menggunakan unity engine dan pixel art.",
+                "dibuatpada": "January 2020",
+                "teknologi": "Photoshop, Unity Engine, C#",
+                "role" : "pixel artist",
+                "link": "https://v3.globalgamejam.org/2020/games/alien-anutech-2"
             }
+            // {
+            //     "namaproject": "TEMOCOUPE WIRELESS",
+            //     "imglokasi": "./img/portfolio/anutechteam.jpeg",
+            //     "deskripsi": "alat pemantai suhu dengan teknologi IoT yang dapat digunakan untuk memantau suhu tubuh pasien secara real-time. Alat ini dapat digunakan untuk memantau suhu tubuh pasien yang sedang sakit.",
+            //     "dibuatpada": "September 2023",
+            //     "teknologi": "Electonjs, HTML, CSS, JS, Bootstrap, ESP32, Arduino",
+            //     "role" : "Fullstack Developer",
+            //     "link": "https://github.com/RizkiDesu/poi-Termo"
+            // }
             
         ]
     },
