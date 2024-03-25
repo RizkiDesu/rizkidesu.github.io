@@ -1,0 +1,138 @@
+
+[
+    {
+        "About":
+        [
+            {
+                "nama": "Rizki Fadilah",
+                "me": "it developer",
+                "img": "./img/IMG_20210801_113013.jpg",
+                "Aboutme" : "Perkenalkan, nama saya Rizki Putra Utama Endriansyah. S1 Teknik informatika dari Universitas Kajuruhan malang. Selama kuliah, saya berhasil dapat pendanaan di bidang kemahasiswaan dan aktif berorganisasi dalam kampus. Sebelumnya, saya pernah magang sebagai game desaider dan IoT Depeloper. Saya sangat menyukai pekerjaan yang berhubungan dengan Teknologi Informasi dan perangkat keras dan memiliki kemampuan untuk dengan cepat belajar.",
+                "email" : "rizkiutama379@gmail.com",
+                "phone" : "+62 85850663731"
+            }
+        ]
+    },
+    {
+        "skills" : ["Python", "Javascripts", "Bootstrap", "IoT", "odoo","Perencanaan dan Pengorganisasian","DesainGrafis"]
+    },
+    {
+        "social":
+        [
+            {
+                "platform" : "Instagram",
+                "link" : "https://www.instagram.com/rizkiutama379/",
+                "icon" : "fab fa-instagram"
+            },
+            {
+                "platform" : "Facebook",
+                "link" : "https://www.linkedin.com/in/rizki-putra-utama-endriansyah-7b0b3b1b4/",
+                "icon" : "fab fa-linkedin"
+            },
+            {
+                "platform" : "Github",
+                "link" : "https://github.com/RizkiDesu",
+                "icon" : "fab fa-github"
+            },
+            {
+                "platform" : "Youtube",
+                "link" : "https://www.youtube.com/channel/UC7sf34Z7pVKucV-E6r0_DPA",
+                "icon" : "fab fa-youtube"
+            },
+            {
+                "platform" : "Twitter",
+                "link" : "https://twitter.com/rizki_desu",
+                "icon" : "fab fa-twitter"
+            }
+            
+        ]
+    },
+    {
+        "project":
+        [
+            {
+                "namaproject": "Kwh Meter IoT",
+                "imglokasi": "./img/portfolio/KWHMETER.JPG",
+                "deskripsi": "Dibuat dalam rangka magang di PT. Inovasi Teknologi Desa. Aplikasi ini bertujuan untuk memonitoring daya listrik rumah tangga dengan menggunakan teknologi IoT berbasis website.",
+                "dibuatpada": "Juni 2021",
+                "teknologi": "HTML, CSS, JavaScript, PHP, MySQL, ESP8266",
+                "role" : "Fullstack Developer",
+                "link": "https://github.com/RizkiDesu/kwh_meter"
+            },
+            {
+                "namaproject": "Deteksi Katarak",
+                "imglokasi": "./img/portfolio/deteksi_katarak.png",
+                "deskripsi": "Dibuat dalam rangka lomba hackaton bpjs yang di selengarakan oleh bpjs kesehatan. Aplikasi ini bertujuan untuk mendeteksi katarak pada mata dengan menggunakan teknologi computer vision berbasis website.",
+                "dibuatpada": "Agustus 2023",
+                "teknologi": "Python, Flask, HTML, CSS, JS",
+                "role" : "Fullstack Developer",
+                "link": "https://github.com/RizkiDesu/deteksi_katarak"
+            }
+            
+        ]
+    },
+    {
+        "educations":
+        [
+            {
+                "instansi": "Universitas PGRI Kajuruhan Malang",
+                "jurusan": "S1 Teknik Informatika",
+                "nilaiAkhir": "IPK : 3.5/4.0",
+                "tahun": "2019 - 2023",
+                "deskripsi" : "Saya mengambil jurusan Teknik Informatika di Universitas PGRI Kajuruhan Malang. Selama kuliah, saya berhasil dapat pendanaan di bidang kemahasiswaan dan aktif berorganisasi dalam kampus.",
+                "list" : 
+                [
+                    "Ketua bidang Medkominfo dan Humas LEDMA AL-FARABI (Lembaga Dakwah Mahasiswa Al-Farabi) Universitas PGRI Kanjuruhan Malang, Periode 2021-2022.",
+                    "Ketua umum HMPSTI (Himpunan Mahasiswa Program Studi Teknik Informatika) Universitas PGRI Kanjuruhan Malang, Periode 2020-2021.", 
+                    "Program Pembinaan Mahasiswa Wirausaha (P2MW), Lolos Pendanaan, Tahun 2022.",
+                    "Program Inovasi Wirausaha Digital Mahasiswa (IWDM), Lolos Pendanaan, Tahun 2022",
+                    "Penelitian Bidang IoT Rancang Bangun Sistem Aplikasi Monitoring Daya Listrik Rumah Berbasis Android",
+                    "Penelitian Bidang Computer Vision Objek Human Tracking Menggunakan Algoritma Camshift"
+                ]
+            }
+        ]
+    },
+    {
+        "eperiences":
+        [
+            {
+                "instansi": "SMAN Annur Bululawang",
+                "posisi": "Freelance GURU TIK",
+                "tahun": "Juli 2023 - Sekarang",
+                "deskripsi" : "Saya bekerja sebagai guru TIK di SMAN Annur Bululawang. Selama bekerja, saya berhasil membuat materi pembelajaran yang menarik dan mudah dipahami oleh siswa.",
+                "list" : 
+                [
+                    "Memberikan pelajaran tentang konsep dasar teknologi informasi, pemrograman, desain grafis, atau topik TIK lainnya.",
+                    "Mengelola perangkat keras dan perangkat lunak komputer di kelas. Memastikan ketersediaan sumber daya pendukung, seperti proyektor koneksi internet dll.",
+                    "Mempromosikan penggunaan teknologi dalam proses pembelajaran, termasuk pemanfaatan platform pembelajaran digital.",
+                    "Memberikan dukungan teknis bagi siswa yang menghadapi masalah teknologi."
+                ]
+            },
+            {
+                "instansi": "PT. Inovasi Teknologi Desa",
+                "posisi": "Magang IoT Developer",
+                "tahun": "Juni 2022",
+                "deskripsi" : "Saya magang di PT. Inovasi Teknologi Desa sebagai IoT Developer. Selama magang, saya berhasil membuat aplikasi monitoring daya listrik rumah tangga dengan menggunakan teknologi IoT berbasis website.",
+                "list" : 
+                [
+                    "Menganalisis kebutuhan perangkat lunak atau aplikasi yang akan dikembangkan. Merancang struktur dan arsitektur sistem.",
+                    "Menulis kode program dengan menggunakan bahasa pemrograman.",
+                    "Membuat dokumentasi yang lengkap untuk kode program yang telah dibuat."
+                ]
+            },
+            {
+                "instansi": "Magesoft Studio",
+                "posisi": "Game Desain & Programmer",
+                "tahun": "Juni 2022",
+                "deskripsi" : "Magangang di Magesoft Studio yang berlokasi di kota Malang. kami membuat game dengan menggunakan Unity Engine kerja remote.",
+                "list" : 
+                [
+                    "Menguji permainan untuk mengidentifikasi bug atau masalah teknis",
+                    "Membantu dalam merancang level atau konten permainan.",
+                    "Membantu dalam penulisan skenario, dialog, atau konten naratif permainan."
+                ]
+            }
+        ]
+    }
+]
+  

@@ -97,5 +97,3 @@ function portofolioDetails(portofolioItem){
     portofolioItem.querySelector(".portfolio-item-detail").innerHTML;
 }
 
-
-
