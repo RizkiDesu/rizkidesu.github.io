@@ -90,6 +90,24 @@
                 "teknologi": "Jsx, css, html, reactjs, tailwin, vercel",
                 "role" : "Fullstack Developer",
                 "link": "https://github.com/RizkiDesu/Porthofolio_NextJs13"
+            },
+            {
+                "namaproject": "Modeling 3D",
+                "imglokasi": "./img/portfolio/3d.png",
+                "deskripsi": "Dibuat dalam rangka belajar blender. Model 3D ini bertema tentang nenuru sebuah bandara. Model ini dibuat dengan menggunakan blender.",
+                "dibuatpada": "Agustus 2023",
+                "teknologi": "3D, texture, material, lighting, render, blender",
+                "role" : "3D Artist",
+                "link": "https://drive.google.com/drive/folders/13kei9IbM5ZcufDweomfdqf3NKG8-HAcC?usp=sharing"
+            },
+            {
+                "namaproject": "Design 2D",
+                "imglokasi": "./img/portfolio/2d.jpg",
+                "deskripsi": "Desain ini dibuat dengan menggunakan perangkat lunak ternama photoshop, corel, figma dll.",
+                "dibuatpada": "2020 - 2023",
+                "teknologi": "Photoshop, coreldraw, figma",
+                "role" : "2D Desainer",
+                "link": "https://drive.google.com/drive/folders/16sjW4bRXyVu2brzJs73EZY2gkkkbGy0O?usp=sharing"
             }
         ]
     },
