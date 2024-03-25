@@ -122,6 +122,17 @@
                 ]
             },
             {
+                "instansi": "LEDMA AL-FARABI Univ Univ. PGRI Kanjuruhan Malang",
+                "posisi": "Ketua Bidang 4",
+                "tahun": "Jan 2021 - Jan 2022",
+                "deskripsi" : "Pengalaman organisasi saya di LEDMA AL-FARABI Universitas PGRI Kanjuruhan Malang. Saya menjabat sebagai Ketua Bidang 4 (Medkominfo dan Humas).",
+                "list" : 
+                [
+                    "Mengevaluasi kinerja organisasi secara rutin. Mengidentifikasi area peningkatan dan mengimplementasikan perubahan yang diperlukan.",
+                    "Mengambil keputusan yang strategis untuk kebaikan organisasi dengan mempertimbangkan masukan dari anggota dan tim dan bertanggung jawab atas keberhasilan atau kegagalan keputusan yang diambil."
+                ]
+            },
+            {
                 "instansi": "Magesoft Studio",
                 "posisi": "Game Desain & Programmer",
                 "tahun": "Jun 2021 - Des 2021",
@@ -131,6 +142,20 @@
                     "Menguji permainan untuk mengidentifikasi bug atau masalah teknis",
                     "Membantu dalam merancang level atau konten permainan.",
                     "Membantu dalam penulisan skenario, dialog, atau konten naratif permainan."
+                ]
+            },
+            {
+                "instansi": "HMPSTI Univ. PGRI Kanjuruhan Malang",
+                "posisi": "KETUA UMUM",
+                "tahun": "Jan 2021 - Jan 2022",
+                "deskripsi" : "Pengalaman organisasi saya di HMPSTI Universitas PGRI Kanjuruhan Malang. Saya menjabat sebagai Ketua Umum HMPSTI.",
+                "list" : 
+                [
+                    "Mengambil keputusan yang strategis untuk kebaikan organisasi dengan mempertimbangkan masukan dari anggota dan tim dan bertanggung jawab atas keberhasilan atau kegagalan keputusan yang diambil",
+                    "Merancang dan mengimplementasikan rencana strategis untuk mencapai tujuan organisasi.",
+                    "Menjaga komunikasi yang efektif antara anggota organisasi",
+                    "Mengidentifikasi area peningkatan dan mengimplementasikan perubahan yang diperlukan.",
+                    "Menjadi organisasi di forum publik. Memperjuangkan kepentingan organisasi."
                 ]
             }
         ]
