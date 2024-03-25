@@ -882,7 +882,7 @@ ul{
     }
 }
 
-@media(max-width:767px){
+@media(max-width:800px){
     .contact-form,
     .contact-info,
     .about-img,
