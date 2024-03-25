@@ -99,6 +99,14 @@ function portofolioDetails(portofolioItem){
 
 
 
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     fetchData();
   });
@@ -109,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     xhr.onload = function() {
         if(this.status === 200) {
             const data = JSON.parse(this.responseText);
+            profile(data);
             displayEperiences(data);
             displayEducations(data);
             displaySkills(data);
@@ -119,6 +128,92 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     xhr.send();
+  }
+ // display prifile
+ function profile(data) {
+  home(data);
+  about(data);
+  contact(data);
+  
+
+  function contact(data){
+    const profileContainer = document.getElementById('contact-data');
+    let html = '';
+    data.forEach(item => {
+      if (item.Abouts) {
+        item.Abouts.forEach(about => {
+          html += `
+          <div class="contact-info-item">
+            <h3>Email</h3>
+            <p>${about.email}</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>Phone</h3>
+            <p>${about.phone} </p>
+          </div>`
+          });
+        }
+    });
+    profileContainer.innerHTML = html;
+
+  }
+
+  function about(data){
+    Pabout(data);
+    IMGabout(data);
+    function Pabout(data){
+      const profileContainer = document.getElementById('P-about');
+      let html = '';
+      data.forEach(item => {
+        if (item.Abouts) {
+          item.Abouts.forEach(about => {
+            html += `${about.Aboutme}`
+            });
+          }
+      });
+      profileContainer.innerHTML = html;
+    }
+
+    function IMGabout(data){
+      const profileContainer = document.getElementById('IMG-about');
+      let html = '';
+      data.forEach(item => {
+        if (item.Abouts) {
+          item.Abouts.forEach(about => {
+            html += `<img src="${about.aboutImg}" alt="${about.nama} imag">`
+            });
+          }
+      });
+      profileContainer.innerHTML = html;
+    }
+  }
+
+  function home(data){
+    const profileContainer = document.getElementById('homepageContainer');
+    let html = '';
+    data.forEach(item => {
+      if (item.Abouts) {
+        item.Abouts.forEach(about => {
+          html += `
+            <div class="row align-items-center">
+              <div class="home-text" >
+                <p>Hello I'm </p>
+                <h1>${about.nama}</h1>
+                <h2>${about.whatMe}</h2>
+                <a href="#about" class="btn link-item">more about me</a>
+                <a href="#portfolio" class="btn link-item">portfolio</a>
+              </div>
+              <div class="home-img">
+                <div class="img-box">
+                  <img src="${about.homeImg}" alt="${about.nama} image">
+                </div>
+              </div>
+            </div>`
+          });
+        }
+    });
+    profileContainer.innerHTML = html;
+  }
   }
   // display skisll
   function displaySkills(data) {

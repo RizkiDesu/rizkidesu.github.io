@@ -1,12 +1,13 @@
 
 [
     {
-        "About":
+        "Abouts":
         [
             {
-                "nama": "Rizki Fadilah",
-                "me": "it developer",
-                "img": "./img/IMG_20210801_113013.jpg",
+                "nama": "Rizki Putra Utama Endriansyah",
+                "whatMe": "it developer",
+                "homeImg": "./img/profile-img.png",
+                "aboutImg": "./img/about-img.png",
                 "Aboutme" : "Perkenalkan, nama saya Rizki Putra Utama Endriansyah. S1 Teknik informatika dari Universitas Kajuruhan malang. Selama kuliah, saya berhasil dapat pendanaan di bidang kemahasiswaan dan aktif berorganisasi dalam kampus. Sebelumnya, saya pernah magang sebagai game desaider dan IoT Depeloper. Saya sangat menyukai pekerjaan yang berhubungan dengan Teknologi Informasi dan perangkat keras dan memiliki kemampuan untuk dengan cepat belajar.",
                 "email" : "rizkiutama379@gmail.com",
                 "phone" : "+62 85850663731"
