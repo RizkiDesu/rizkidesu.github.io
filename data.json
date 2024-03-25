@@ -1,4 +1,3 @@
-
 [
     {
         "Abouts":
@@ -76,7 +75,7 @@
             },
             {
                 "namaproject": "Alien Anu Tech-GGJ",
-                "imglokasi": "./img/portfolio/anutechteam.jpeg",
+                "imglokasi": "./img/portfolio/anutechteam.jpg",
                 "deskripsi": "Dibuat dalam rangka global game jam 2020. Game ini bertema tentang alien yang mencoba untuk kembali ke planet asalnya. Game ini dibuat dengan menggunakan unity engine dan pixel art.",
                 "dibuatpada": "January 2020",
                 "teknologi": "Photoshop, Unity Engine, C#",

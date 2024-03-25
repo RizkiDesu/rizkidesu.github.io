@@ -98,15 +98,6 @@ function portofolioDetails(portofolioItem){
 }
 
 
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     fetchData();
   });
