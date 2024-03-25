@@ -882,7 +882,7 @@ ul{
     }
 }
 
-@media(max-width:800px){
+@media(max-width:865px){
     .contact-form,
     .contact-info,
     .about-img,
@@ -906,7 +906,7 @@ ul{
 
 }
 
-@media(max-width:575px){
+@media(max-width:775px){
     .section-title h2,
     .header .nav-inner ul li a{
         font-size: 35px;
