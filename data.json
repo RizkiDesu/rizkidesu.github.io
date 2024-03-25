@@ -78,8 +78,8 @@
             {
                 "instansi": "Universitas PGRI Kajuruhan Malang",
                 "jurusan": "S1 Teknik Informatika",
-                "nilaiAkhir": "IPK : 3.5/4.0",
-                "tahun": "2019 - 2023",
+                "nilaiAkhir": "IPK : 3.56/4.0",
+                "tahun": "Mei 2019 - Sep 2023",
                 "deskripsi" : "Saya mengambil jurusan Teknik Informatika di Universitas PGRI Kajuruhan Malang. Selama kuliah, saya berhasil dapat pendanaan di bidang kemahasiswaan dan aktif berorganisasi dalam kampus.",
                 "list" : 
                 [
@@ -98,7 +98,7 @@
         [
             {
                 "instansi": "SMAN Annur Bululawang",
-                "posisi": "Freelance GURU TIK",
+                "posisi": "GURU Honorer TIK",
                 "tahun": "Juli 2023 - Sekarang",
                 "deskripsi" : "Saya bekerja sebagai guru TIK di SMAN Annur Bululawang. Selama bekerja, saya berhasil membuat materi pembelajaran yang menarik dan mudah dipahami oleh siswa.",
                 "list" : 
@@ -112,7 +112,7 @@
             {
                 "instansi": "PT. Inovasi Teknologi Desa",
                 "posisi": "Magang IoT Developer",
-                "tahun": "Juni 2022",
+                "tahun": "Feb 2022 - Mei 2022",
                 "deskripsi" : "Saya magang di PT. Inovasi Teknologi Desa sebagai IoT Developer. Selama magang, saya berhasil membuat aplikasi monitoring daya listrik rumah tangga dengan menggunakan teknologi IoT berbasis website.",
                 "list" : 
                 [
@@ -124,7 +124,7 @@
             {
                 "instansi": "Magesoft Studio",
                 "posisi": "Game Desain & Programmer",
-                "tahun": "Juni 2022",
+                "tahun": "Jun 2021 - Des 2021",
                 "deskripsi" : "Magangang di Magesoft Studio yang berlokasi di kota Malang. kami membuat game dengan menggunakan Unity Engine kerja remote.",
                 "list" : 
                 [
