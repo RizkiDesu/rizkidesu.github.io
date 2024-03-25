@@ -81,6 +81,15 @@
                 "teknologi": "Photoshop, Unity Engine, C#",
                 "role" : "pixel artist",
                 "link": "https://v3.globalgamejam.org/2020/games/alien-anutech-2"
+            },
+            {
+                "namaproject": "Phorofolio Website",
+                "imglokasi": "./img/portfolio/fortofolio_web.png",
+                "deskripsi": "dibuat dalam rangka belajar reactjs. Website ini bertujuan untuk menampilkan portofolio saya. Website ini dibuat dengan menggunakan reactjs dan tailwin.",
+                "dibuatpada": "January 2020",
+                "teknologi": "Jsx, css, html, reactjs, tailwin, vercel",
+                "role" : "Fullstack Developer",
+                "link": "https://github.com/RizkiDesu/Porthofolio_NextJs13"
             }
         ]
     },
