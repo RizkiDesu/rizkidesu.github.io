@@ -83,16 +83,6 @@
                 "role" : "pixel artist",
                 "link": "https://v3.globalgamejam.org/2020/games/alien-anutech-2"
             }
-            // {
-            //     "namaproject": "TEMOCOUPE WIRELESS",
-            //     "imglokasi": "./img/portfolio/anutechteam.jpeg",
-            //     "deskripsi": "alat pemantai suhu dengan teknologi IoT yang dapat digunakan untuk memantau suhu tubuh pasien secara real-time. Alat ini dapat digunakan untuk memantau suhu tubuh pasien yang sedang sakit.",
-            //     "dibuatpada": "September 2023",
-            //     "teknologi": "Electonjs, HTML, CSS, JS, Bootstrap, ESP32, Arduino",
-            //     "role" : "Fullstack Developer",
-            //     "link": "https://github.com/RizkiDesu/poi-Termo"
-            // }
-            
         ]
     },
     {
