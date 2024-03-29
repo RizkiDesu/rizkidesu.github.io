@@ -1,26 +1,26 @@
 window.addEventListener("load",()=>{
-    document.querySelector(".main").classList.remove("hidden");
-    document.querySelector(".home-section").classList.add("active");
+    document.querySelector(".main").classList.remove("hidden")
+    document.querySelector(".home-section").classList.add("active")
     // page loader
-    document.querySelector(".page-loader").classList.add("fade-out");
+    document.querySelector(".page-loader").classList.add("fade-out")
     setTimeout(() => {
-        document.querySelector(".page-loader").style.display="none";
-    }, 1000);
+        document.querySelector(".page-loader").style.display="none"
+    }, 1000)
 })
 
 
 //togle navbar
-const navToggler = document.querySelector(".nav-toggler");
+const navToggler = document.querySelector(".nav-toggler")
 navToggler.addEventListener("click", ()=>{
-    hideSection();
-    toggleNavbar();
+    hideSection()
+    toggleNavbar()
     document.body.classList.toggle("hide-scrolling")
 })
 function hideSection(){
-    document.querySelector("section.active").classList.toggle("fade-out");
+    document.querySelector("section.active").classList.toggle("fade-out")
 }
 function toggleNavbar(){
-    document.querySelector(".header").classList.toggle("active");
+    document.querySelector(".header").classList.toggle("active")
 }
 
 
@@ -28,108 +28,108 @@ function toggleNavbar(){
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("link-item") && e.target.hash!==""){
         //active overlay
-        document.querySelector(".overlay").classList.add("active");
-        document.body.classList.add("hide");
-        const hash = e.target.hash;
+        document.querySelector(".overlay").classList.add("active")
+        document.body.classList.add("hide")
+        const hash = e.target.hash
         // console.log(hash)
         if (e.target.classList.contains("nav-item")){
-            toggleNavbar();
+            toggleNavbar()
         }
         else{
-            hideSection();
-            document.body.classList.add("hide-scrolling");
+            hideSection()
+            document.body.classList.add("hide-scrolling")
         }
         setTimeout(() => {
-            document.querySelector("section.active").classList.remove("active","fade-out");
-            document.querySelector(e.target.hash).classList.add("active");
-            window.scrollTo(0,0);
-            document.body.classList.remove("hide-scrolling");
-            document.body.classList.remove("hide");
-            document.querySelector(".overlay").classList.remove("active");
-        }, 500);
+            document.querySelector("section.active").classList.remove("active","fade-out")
+            document.querySelector(e.target.hash).classList.add("active")
+            window.scrollTo(0,0)
+            document.body.classList.remove("hide-scrolling")
+            document.body.classList.remove("hide")
+            document.querySelector(".overlay").classList.remove("active")
+        }, 500)
     }
-});
+})
 
 
 //about tab
 const tabContainer = document.querySelector('.about-taps'),
-aboutSection = document.querySelector('.about-section');
+aboutSection = document.querySelector('.about-section')
 tabContainer.addEventListener('click', (e) => {
     if(e.target.classList.contains('tab-item') && !e.target.classList.contains('active')){
-        tabContainer.querySelector('.active').classList.remove('active');
-        e.target.classList.add('active');
-        const target = e.target.getAttribute('data-target');
-        aboutSection.querySelector('.tab-content.active').classList.remove('active');
-        aboutSection.querySelector(target).classList.add('active');
+        tabContainer.querySelector('.active').classList.remove('active')
+        e.target.classList.add('active')
+        const target = e.target.getAttribute('data-target')
+        aboutSection.querySelector('.tab-content.active').classList.remove('active')
+        aboutSection.querySelector(target).classList.add('active')
     }
-});
+})
 
 // detail  pop up
 document.addEventListener("click", (e) =>{
     if(e.target.classList.contains("view-project-btn")){
-        togglePortfolioPopup();
-        document.querySelector(".portfolio-popup").scrollTo(0,0);
-        portofolioDetails(e.target.parentElement);
+        togglePortfolioPopup()
+        document.querySelector(".portfolio-popup").scrollTo(0,0)
+        portofolioDetails(e.target.parentElement)
     }
-});
+})
 function togglePortfolioPopup(){
-    document.querySelector(".portfolio-popup").classList.toggle("open");
-    document.body.classList.toggle("hide-scrolling");
-    document.querySelector(".main").classList.toggle("fade-out");
+    document.querySelector(".portfolio-popup").classList.toggle("open")
+    document.body.classList.toggle("hide-scrolling")
+    document.querySelector(".main").classList.toggle("fade-out")
 }
-document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup)
 
 document.addEventListener("click", (e)=>{
     if(e.target.classList.contains("pp-inner")){
-        togglePortfolioPopup();
+        togglePortfolioPopup()
     }
 })
 
 function portofolioDetails(portofolioItem){
-    // console.log(portofolioItem);
+    // console.log(portofolioItem)
     document.querySelector(".pp-thumbnail img").src = 
-    portofolioItem.querySelector(".portfolio-item-thumbnail img").src;
+    portofolioItem.querySelector(".portfolio-item-thumbnail img").src
 
     document.querySelector(".pp-header h3").innerHTML = 
-    portofolioItem.querySelector(".portfolio-item-title").innerHTML;
+    portofolioItem.querySelector(".portfolio-item-title").innerHTML
 
     document.querySelector(".pp-body").innerHTML = 
-    portofolioItem.querySelector(".portfolio-item-detail").innerHTML;
+    portofolioItem.querySelector(".portfolio-item-detail").innerHTML
 }
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetchData();
-  });
+    fetchData()
+  })
   
   function fetchData() {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'data.json', true); // Ganti 'data.json' dengan URL sumber data Anda
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'data.json', true) // Ganti 'data.json' dengan URL sumber data Anda
     xhr.onload = function() {
         if(this.status === 200) {
-            const data = JSON.parse(this.responseText);
-            profile(data);
-            displayEperiences(data);
-            displayEducations(data);
-            displaySkills(data);
-            displaySocialMedia(data);
-            displayProject(data);
+            const data = JSON.parse(this.responseText)
+            profile(data)
+            displayEperiences(data)
+            displayEducations(data)
+            displaySkills(data)
+            displaySocialMedia(data)
+            displayProject(data)
         } else {
-            console.error('Failed to fetch data');
+            console.error('Failed to fetch data')
         }
     }
-    xhr.send();
+    xhr.send()
   }
  // display prifile
  function profile(data) {
-  home(data);
-  about(data);
-  contact(data);
+  home(data)
+  about(data)
+  contact(data)
   
 
   function contact(data){
-    const profileContainer = document.getElementById('contact-data');
-    let html = '';
+    const profileContainer = document.getElementById('contact-data')
+    let html = ''
     data.forEach(item => {
       if (item.Abouts) {
         item.Abouts.forEach(about => {
@@ -142,46 +142,46 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Phone</h3>
             <p>${about.phone} </p>
           </div>`
-          });
+          })
         }
-    });
-    profileContainer.innerHTML = html;
+    })
+    profileContainer.innerHTML = html
 
   }
 
   function about(data){
-    Pabout(data);
-    IMGabout(data);
+    Pabout(data)
+    IMGabout(data)
     function Pabout(data){
-      const profileContainer = document.getElementById('P-about');
-      let html = '';
+      const profileContainer = document.getElementById('P-about')
+      let html = ''
       data.forEach(item => {
         if (item.Abouts) {
           item.Abouts.forEach(about => {
             html += `${about.Aboutme}`
-            });
+            })
           }
-      });
-      profileContainer.innerHTML = html;
+      })
+      profileContainer.innerHTML = html
     }
 
     function IMGabout(data){
-      const profileContainer = document.getElementById('IMG-about');
-      let html = '';
+      const profileContainer = document.getElementById('IMG-about')
+      let html = ''
       data.forEach(item => {
         if (item.Abouts) {
           item.Abouts.forEach(about => {
             html += `<img src="${about.aboutImg}" alt="${about.nama} imag">`
-            });
+            })
           }
-      });
-      profileContainer.innerHTML = html;
+      })
+      profileContainer.innerHTML = html
     }
   }
 
   function home(data){
-    const profileContainer = document.getElementById('homepageContainer');
-    let html = '';
+    const profileContainer = document.getElementById('homepageContainer')
+    let html = ''
     data.forEach(item => {
       if (item.Abouts) {
         item.Abouts.forEach(about => {
@@ -200,44 +200,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
               </div>
             </div>`
-          });
+          })
         }
-    });
-    profileContainer.innerHTML = html;
+    })
+    profileContainer.innerHTML = html
   }
   }
   // display skisll
   function displaySkills(data) {
-    const skillsContainer = document.getElementById('skills-items');
-    let html = '';
+    const skillsContainer = document.getElementById('skills-items')
+    let html = ''
     data.forEach(item => {
         if (item.skills) {
             item.skills.forEach(skill => {
                 html += `<div class="skill-item">${skill}</div>`
-            });
+            })
         }
-    });
-    skillsContainer.innerHTML = html;
+    })
+    skillsContainer.innerHTML = html
   }
   
   // sosiial media
   function displaySocialMedia(data) {
-    const socialMediaContainer = document.getElementById('sociallinks');
-    let html = '';
+    const socialMediaContainer = document.getElementById('sociallinks')
+    let html = ''
     data.forEach(item => {
         if (item.social) {
             item.social.forEach(social => {
                 html += `<a href="${social.link}"><i class="${social.icon}"></i></a>`
-            });
+            })
         }
-    });
-    socialMediaContainer.innerHTML = html;
+    })
+    socialMediaContainer.innerHTML = html
   }
   
   // portofolio details
   function displayProject(data) {
-    const dataContainer = document.getElementById('dataContainer');
-    let html = '';
+    const dataContainer = document.getElementById('dataContainer')
+    let html = ''
     data.forEach(item => {
         if (item.project) {
             item.project.forEach(project => {
@@ -263,16 +263,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         </ul>
                       </div>
                     </div>
-                  </div>`;
-            });
+                  </div>`
+            })
         }
-    });
-    dataContainer.innerHTML = html;
+    })
+    dataContainer.innerHTML = html
   }
   // education display
   function displayEducations(data) {
-    const educationsContainer = document.getElementById('education-item');
-    let html = '';
+    const educationsContainer = document.getElementById('education-item')
+    let html = ''
     data.forEach(item => {
         if (item.educations) {
             item.educations.forEach(education => {
@@ -284,27 +284,27 @@ document.addEventListener('DOMContentLoaded', function() {
                   ${education.deskripsi}
                   <br>
                   ${education.nilaiAkhir} 
-              `;
+              `
               if (education.list && education.list.length > 0) {
-                html += '<ul>';
+                html += '<ul>'
                 education.list.forEach(item => {
-                    html += `<li>${item}</li>`;
-                });
-                html += '</ul>';
+                    html += `<li>${item}</li>`
+                })
+                html += '</ul>'
             }
               html += `
                 </p>
               </div>
-            </div>`;
-            });
+            </div>`
+            })
         }
-    });
-    educationsContainer.innerHTML = html;
+    })
+    educationsContainer.innerHTML = html
   }
   
   function displayEperiences(data) {
-    const educationsContainer = document.getElementById('experience-item');
-    let html = '';
+    const educationsContainer = document.getElementById('experience-item')
+    let html = ''
     data.forEach(item => {
         if (item.eperiences) {
             item.eperiences.forEach(eperience => {
@@ -314,20 +314,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>${eperience.posisi} -<span> ${eperience.instansi}</span></h4>
                 <p>
                   ${eperience.deskripsi}
-              `;
+              ` 
               if (eperience.list && eperience.list.length > 0) {
-                html += '<ul>';
+                html += '<ul>'
                 eperience.list.forEach(item => {
-                    html += `<li>${item}</li>`;
-                });
-                html += '</ul>';
+                    html += `<li>${item}</li>`
+                })
+                html += '</ul>'
             }
               html += `
                 </p>
               </div>
-            </div>`;
-            });
+            </div>`
+            })
         }
-    });
-    educationsContainer.innerHTML = html;
+    })
+    educationsContainer.innerHTML = html
   }

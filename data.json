@@ -83,7 +83,7 @@
                 "link": "https://v3.globalgamejam.org/2020/games/alien-anutech-2"
             },
             {
-                "namaproject": "Phorofolio Website",
+                "namaproject": "Portfolio Website Vercel",
                 "imglokasi": "./img/portfolio/fortofolio_web.png",
                 "deskripsi": "dibuat dalam rangka belajar reactjs. Website ini bertujuan untuk menampilkan portofolio saya. Website ini dibuat dengan menggunakan reactjs dan tailwin.",
                 "dibuatpada": "January 2020",
