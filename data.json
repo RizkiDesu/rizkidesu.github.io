@@ -108,6 +108,15 @@
                 "teknologi": "Photoshop, coreldraw, figma",
                 "role" : "2D Desainer",
                 "link": "https://drive.google.com/drive/folders/16sjW4bRXyVu2brzJs73EZY2gkkkbGy0O?usp=sharing"
+            },
+            {
+                "namaproject": "Portfolio Website CSS, HTML & JS",
+                "imglokasi": "./img/portfolio/pp.png",
+                "deskripsi": "Website ini bertujuan untuk menampilkan portofolio saya. Website ini dibuat dengan menggunakan css, html, dan javascript.",
+                "dibuatpada": "2024",
+                "teknologi": "HTML, CSS, JS",
+                "role" : "Fullstack Developer",
+                "link": "https://github.com/RizkiDesu/rizkidesu.github.io"
             }
         ]
     },
