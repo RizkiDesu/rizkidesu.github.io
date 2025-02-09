@@ -141,11 +141,23 @@
     },
     {
         "eperiences":
-        [
+        [   {
+            "instansi": "Odoo Programer",
+            "posisi": "PT Cendana Teknika Utama",
+            "tahun": "Juni 2024 - Sekarang",
+            "deskripsi" : "Saya bekerja sebagai odoo programer di PT Cendana Teknika Utama Membangun system erp odoo atas permintaan clien perusahaaan",
+            "list" : 
+            [
+                "Membuat System Informasi Rumah Sakit",
+                "Menginplementasikan System Ke Rumah Sakit",
+                "Mengajari Bagaimana Penggunaan SIMRS",
+                "Menerima Masukan Dari Pihak Clien dan Mengeksekusi dengan Sebuah System",
+            ]
+        },
             {
                 "instansi": "SMAN Annur Bululawang",
                 "posisi": "GURU Honorer TIK",
-                "tahun": "Juli 2023 - Sekarang",
+                "tahun": "Juli 2023 - juli 2014",
                 "deskripsi" : "Saya bekerja sebagai guru TIK di SMAN Annur Bululawang. Selama bekerja, saya berhasil membuat materi pembelajaran yang menarik dan mudah dipahami oleh siswa.",
                 "list" : 
                 [
